@@ -97,6 +97,49 @@
 
         </Grid>
 
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            
+            <Label Text="Nombre:"
+              FontSize="15"
+              Grid.Row="0"
+              Grid.Column="0"
+            />
+            <Entry x:Name="txtNombre"
+                   Placeholder="Ingresar Nombre"
+                 Grid.Row="1"
+                 Grid.Column="0"
+              />
+                            <Label Text="Apellido:"
+                  FontSize="15"
+                  Grid.Row="0"
+                  Grid.Column="1"
+                />
+                        <Entry x:Name="txtApellido" 
+                               Placeholder="Ingresar Apellido"
+                 Grid.Row="1"
+                 Grid.Column="1"
+              />
+                        <Label Text="Edad:"
+              FontSize="15"
+              Grid.Row="0"
+              Grid.Column="2"
+            />
+                        <Entry x:Name="txtEdad" 
+                               Placeholder="Ingresar Edad"
+                 Grid.Row="1"
+                 Grid.Column="2"
+              />
+
+        </Grid>
 
     </VerticalStackLayout>
 </ContentPage>
