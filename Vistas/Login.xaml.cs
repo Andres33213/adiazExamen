@@ -39,6 +39,6 @@ public partial class Login : ContentPage
 
     private void btnAcercaDe_Clicked(object sender, EventArgs e)
     {
-        DisplayAlert("Informacion del Desarrolador", "Nombre: Andres Diaz \nCurso: 8vo\nParalelo: A", "Cancel");
+        DisplayAlert("Informacion del Desarrollador", "Nombre: Andres Diaz \nCurso: 8vo\nParalelo: A", "Cancel");
     }
 }

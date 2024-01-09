@@ -2,7 +2,8 @@ namespace adiazExamen.Vistas;
 
 public partial class Registro : ContentPage
 {
-	public Registro(string usuario)
+    private double pagoMensual = 0;
+    public Registro(string usuario)
 	{
 		InitializeComponent();
         lblUsuario.Text = "Usuario conectado: " + usuario;
@@ -31,7 +32,7 @@ public partial class Registro : ContentPage
         {
             double montoInicial = Convert.ToDouble(txtMontoInicial.Text);
 
-            double pagoMensual;
+       
 
             if (montoInicial == 1500)
             {
@@ -42,7 +43,7 @@ public partial class Registro : ContentPage
                 pagoMensual = (1500 - montoInicial) / 4 + 0.04 * 1500;
             }
 
-            txtPagoMensual.Text = pagoMensual.ToString("");
+            txtPagoMensual.Text = pagoMensual.ToString();
         }
         catch (Exception ex)
         {
@@ -61,7 +62,6 @@ public partial class Registro : ContentPage
         string ciudad = pkCiudades.Items[pkCiudades.SelectedIndex];
         string pais = pkPaises.Items[pkPaises.SelectedIndex];
         double montoInicial = Convert.ToDouble(txtMontoInicial.Text);
-        double pagoMensual = (1500 - montoInicial) / 4 + 0.04 * 1500;
         double pagoTotal = montoInicial + pagoMensual * 4;
 
         DisplayAlert("Resumen", "Nombre: "+nombre.ToString()+"\nApellido: "+apellido.ToString()+"\nEdad: "+edad.ToString()+
