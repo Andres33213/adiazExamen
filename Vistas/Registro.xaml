@@ -12,9 +12,10 @@
         Text="REGISTRO"
         FontSize="22"
         HorizontalTextAlignment="Center"
-        TextColor="Blue" />
+        TextColor="Blue"
+            Margin="0,10,0,0"/>
 
-        <Grid>
+        <Grid Margin="0,20,0,0">
             <Grid.RowDefinitions>
                 <RowDefinition/>
                 <RowDefinition/>
@@ -97,7 +98,7 @@
 
         </Grid>
 
-        <Grid>
+        <Grid Margin="0,20,0,0">
             <Grid.RowDefinitions>
                 <RowDefinition/>
                 <RowDefinition/>
@@ -132,14 +133,35 @@
               FontSize="15"
               Grid.Row="0"
               Grid.Column="2"
-            />
-                        <Entry x:Name="txtEdad" 
+               />
+            
+            <Entry x:Name="txtEdad" 
                                Placeholder="Ingresar Edad"
                  Grid.Row="1"
                  Grid.Column="2"
-              />
-
+              Keyboard="Numeric"/>
         </Grid>
 
+        <Grid Margin="0,20,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="btnCalcularPagoMensual"
+                    Text="Calcular Pago Mensual"
+                    Clicked="btnCalcularPagoMensual_Clicked"
+                    Grid.Row="0"
+                    Grid.Column="0"/>
+
+            <Button x:Name="btnVerResumen"
+                   Text="Ver Resumen"
+                    Clicked="btnVerResumen_Clicked"
+                    Grid.Row="0"
+                    Grid.Column="1"/>
+
+        </Grid>
     </VerticalStackLayout>
 </ContentPage>

@@ -58,10 +58,8 @@
                Text="Acerca De"
                 Clicked="btnAcercaDe_Clicked"
                 Grid.Row="2"
-                Grid.Column="1"/>       
+                Grid.Column="1"/>
 
         </Grid>
-        
-
     </VerticalStackLayout>
 </ContentPage>
